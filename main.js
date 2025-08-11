@@ -22,7 +22,7 @@ const cam = new LocAR.WebcamRenderer(renderer);
 // Create the device orientation tracker
 const deviceOrientationControls = new LocAR.DeviceOrientationControls(camera);
 
-locar.fakeGps(45.5502440452437, 8.888188134011767);
+locar.startGps();
 locar.add(cube, 45.5502440452437, 8.888188134011767);
 
 renderer.setAnimationLoop(animate);
